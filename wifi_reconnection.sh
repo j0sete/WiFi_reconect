@@ -12,6 +12,6 @@ ping -c2 ${SERVER} > /dev/null
 
 if [ $? != 0 ]
 then
-  sudo ifdown --force wlan0 #
+  sudo ifdown --force wlan0
   sudo ifup wlan0
 fi
